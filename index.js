@@ -1,7 +1,7 @@
 const input = document.querySelector('.modal input[type=text]');
 const inputPosition = document.querySelector('.input-position');
 
-const positionDropdown = () => {
+const positionOutline = () => {
   const inputBounds = input.getBoundingClientRect();
 
   inputPosition.style.top = `${inputBounds.top}px`;
@@ -11,7 +11,7 @@ const positionDropdown = () => {
 };
 
 const renderLoop = () => {
-  positionDropdown();
+  positionOutline();
   window.requestAnimationFrame(renderLoop);
 };
 
