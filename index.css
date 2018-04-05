@@ -1,0 +1,45 @@
+input {
+  margin: 24px;
+}
+
+.modal {
+  height: 100%;
+  width: 80%;
+  background: linear-gradient(red, blue);
+  overflow-y: auto;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+}
+
+.modal-content {
+  height: 200vh;
+  margin-top: 50vh;
+}
+
+.input-position {
+  border: 2px solid red;
+  pointer-events: none;
+  position: fixed;
+}
+
+.page-content {
+  height: 2000px;
+  background: linear-gradient(green, purple);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
